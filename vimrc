@@ -1,9 +1,11 @@
 execute pathogen#infect()
 filetype plugin indent on
 
+syntax on
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set tags=./tags,tags;
 
 " tree style preview window
 let g:netrw_preview   = 1

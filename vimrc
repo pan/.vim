@@ -7,6 +7,8 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set tags=./tags,tags;
+" Mac backspace
+set backspace=indent,eol,start
 
 " tree style preview window
 let g:netrw_preview   = 1

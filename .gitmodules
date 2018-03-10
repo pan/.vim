@@ -23,3 +23,6 @@
 	path = bundle/ri.vim
 	url = https://github.com/danchoi/ri.vim
 	ignore = dirty
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/command-t.git

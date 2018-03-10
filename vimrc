@@ -9,6 +9,7 @@ set shiftwidth=2
 set tags=./tags,tags;
 " Mac backspace
 set backspace=indent,eol,start
+let g:CommandTWildIgnore='*/tmp/,*/.git'
 
 " tree style preview window
 let g:netrw_preview   = 1
@@ -19,11 +20,11 @@ nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-Space>g :scs find g <C-R>=expand("<cword>")<CR><CR>
 let g:rails_projections = {
   \ "app/models/concerns/*.rb": {
-  \   "command": 'module',
+  \   "command": 'mconcern',
   \   "template":
-  \     "concern :%S do\nend",
+  \     [ "concern :{camelcase|capitalize|colons} do", "end"],
   \   "test": [
-  \     "test/models/concerns/%s_test.rb"
+  \     "test/models/concerns/{underscore}_test.rb"
   \   ],
   \   },
   \ "app/jobs/*.rb": {
